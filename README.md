@@ -1,6 +1,4 @@
-layout: page
-title: "HOMEPAGE"
-permalink: /home
+
 
 # Okoppi Journals Project Page
 
