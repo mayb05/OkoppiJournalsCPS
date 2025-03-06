@@ -1,3 +1,7 @@
+layout: page
+title: "HOMEPAGE"
+permalink: /home
+
 # Okoppi Journals Project Page
 
 ## Capstone 491 S25
