@@ -8,6 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 header {
@@ -28,6 +29,9 @@ h1 {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    max-width: 1200px; /* Set a max-width to prevent overflow */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .box {
