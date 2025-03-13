@@ -16,8 +16,6 @@ header {
     padding: 10px 0;
     text-align: center;
     width: 100%;
-    position: fixed;
-    top: 0;
 }
 
 h1 {
@@ -40,6 +38,13 @@ h1 {
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
     max-width: calc(33.333% - 40px);
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
