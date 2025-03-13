@@ -43,6 +43,15 @@ h1 {
     box-sizing: border-box;
     max-width: calc(33.333% - 40px);
 }
+.box2 {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    max-width: calc(33.333% - 40px);
+}
 
 .box img {
     max-width: 100%;
