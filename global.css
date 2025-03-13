@@ -60,6 +60,13 @@ h1 {
     margin: 0 auto;
     max-height: 200px; /* Set a max-height for the images */
 }
+.box2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 200px; /* Set a max-height for the images */
+}
 
 .images {
     display: flex;
