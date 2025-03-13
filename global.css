@@ -39,7 +39,7 @@ h1 {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    flex: 1 1 calc(33.333% - 40px);
+    flex: 1 1 auto;
     box-sizing: border-box;
     max-width: calc(33.333% - 40px);
 }
@@ -50,6 +50,11 @@ h1 {
     display: block;
     margin: 0 auto;
     max-height: 200px; /* Set a max-height for the images */
+}
+
+.images {
+    display: flex;
+    gap: 10px;
 }
 
 footer {
