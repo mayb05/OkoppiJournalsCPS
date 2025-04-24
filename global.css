@@ -25,11 +25,9 @@ h1 {
 
 .container {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: flex-start; /* Align items to the start */
+    flex-direction: column; /* Stack boxes vertically */
     gap: 20px; /* Add spacing between boxes */
     padding: 20px;
-    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
     max-width: 100%; /* Ensure the container spans the full width */
     box-sizing: border-box;
 }
