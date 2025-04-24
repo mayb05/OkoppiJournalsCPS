@@ -49,6 +49,37 @@ h1 {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
+    cursor: pointer; /* Indicate that the image is clickable */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.box img:hover, .box2 img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.modal.active {
+    display: flex; /* Show modal when active */
 }
 
 .images {

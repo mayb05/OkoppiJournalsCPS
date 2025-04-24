@@ -31,8 +31,31 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal for enlarged images -->
+    <div class="modal" id="imageModal">
+        <img id="modalImage" src="" alt="Enlarged Image">
+    </div>
+
     <footer>
         <p>&copy; 2025 Team 9. All rights reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript for modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+
+        document.querySelectorAll('.images img').forEach(img => {
+            img.addEventListener('click', () => {
+                modalImage.src = img.src; // Set modal image source
+                modal.classList.add('active'); // Show modal
+            });
+        });
+
+        modal.addEventListener('click', () => {
+            modal.classList.remove('active'); // Hide modal on click
+        });
+    </script>
 </body>
 </html>
