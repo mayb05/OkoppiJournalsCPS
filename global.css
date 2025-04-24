@@ -26,12 +26,11 @@ h1 {
 .container {
     display: flex;
     flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between; /* Add spacing between sections */
+    justify-content: flex-start; /* Align items to the start */
     gap: 20px; /* Add spacing between boxes */
     padding: 20px;
     overflow-x: auto; /* Allow horizontal scrolling if content overflows */
-    max-width: 1200px; /* Set a max-width to prevent overflow */
-    width: 100%;
+    max-width: 100%; /* Ensure the container spans the full width */
     box-sizing: border-box;
 }
 
