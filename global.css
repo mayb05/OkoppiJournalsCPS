@@ -25,47 +25,31 @@ h1 {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Add spacing between sections */
+    gap: 20px; /* Add spacing between boxes */
     padding: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
     max-width: 1200px; /* Set a max-width to prevent overflow */
     width: 100%;
     box-sizing: border-box;
 }
 
-.box {
+.box, .box2 {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    flex: 1 1 auto;
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    width: 300px; /* Set a fixed width for each box */
     box-sizing: border-box;
-    max-width: calc(33.333% - 40px);
-}
-.box2 {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    flex: 1 1 auto;
-    box-sizing: border-box;
-    max-width: calc(33.333% - 40px);
 }
 
-.box img {
+.box img, .box2 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    max-height: 200px; /* Set a max-height for the images */
-}
-.box2 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    max-height: 200px; /* Set a max-height for the images */
 }
 
 .images {
